@@ -1,13 +1,17 @@
 <html>
   <body>
     <h1>Totalizador de ventas</h1>
-    <form id="sumar-form">
+    <form id="totalizar-form">
         <label for="total">ingrese la cantidad de items a comprar:</label>
         <input type="number" id="total" />
         </br>
         <label for="precio">ingrese el precio del item que se quiera comprar:</label>
         <input type="number" id="precio" />
-        <button id="totalizar">Totalizar</button>
+        <input type="submit" value="Totalizar" id="totalizar-button" />
+        <SELECT>
+            <OPTION impuesto="UT">UT</OPTION>
+          </SELECT>
+
 
     </form>
     <div id="resultado-div"></div>
