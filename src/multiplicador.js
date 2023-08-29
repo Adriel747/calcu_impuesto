@@ -18,6 +18,9 @@ function impuesto(estado)
     break;
     default:
       break;
+    case 'TX':
+      impuesto=0.0625;
+      break;
   }
   return impuesto;
 }

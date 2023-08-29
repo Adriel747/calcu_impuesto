@@ -1,4 +1,4 @@
-import {multiplicar,descuento} from "./multiplicador.js";
+import {multiplicar,descuento,impuesto} from "./multiplicador.js";
 
 const first = document.querySelector("#total");
 const second = document.querySelector("#precio");
@@ -17,7 +17,8 @@ button1.addEventListener("click", (event) => {
   let total = multiplicar(firstNumber, secondNumber);
   let porcentajeDescuento  = descuento(total);
   let totalDescuento  = multiplicar(porcentajeDescuento,total);
-
+  
+  
   div.innerHTML = "<p>" + "el precio neto es: " + firstNumber + "*" +secondNumber + " = " + multiplicar(firstNumber,secondNumber) +  "</p>";
   des.innerHTML = "<p>" + "el precio neto es: " + firstNumber + "*" +secondNumber + " = " + totalDescuento +  "</p>";
 });
