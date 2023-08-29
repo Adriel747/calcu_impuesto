@@ -9,15 +9,15 @@
         <input type="number" id="precio" />
       <!-- <input type="submit" value="Totalizar" id="totalizar-button" />-->
     </br>
-    <p>elija el estado en el que esta para calcular impuesto
-        <SELECT>
+    <label for="estado">elija el estado en el que esta para calcular impuesto</label>
+        <SELECT name="estado" id="estado">
             <OPTION value="UT">UT</OPTION>
             <OPTION value="NV">NV</OPTION>
             <OPTION value="TX">TX</OPTION>
             <OPTION value="AL">AL</OPTION>
             <OPTION value="CA">CA</OPTION>
           </SELECT>
-        </p>
+        </br>
         <button id="totalizar">Totalizar</button>
     </form>
     <div id="resultado-div"></div>
