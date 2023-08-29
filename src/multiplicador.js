@@ -8,5 +8,17 @@ function descuento(des) {
   }
   return descuento;
 }
-
-export {multiplicar,descuento};
+function impuesto(estado)
+{
+  let impuesto = 0;
+  switch(estado)
+  {
+    case 'CA':
+    impuesto=0.0825;
+    break;
+    default:
+      break;
+  }
+  return impuesto;
+}
+export {multiplicar,descuento,impuesto};
