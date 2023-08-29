@@ -6,6 +6,8 @@ function descuento(des) {
   if (des >= 1000){
     descuento=0.3
   }
+  if (des >= 1000 && des <= 3000)
+  des=0.03;
   return descuento;
 }
 function impuesto(estado)

@@ -27,5 +27,7 @@ button1.addEventListener("click", (event) => {
 
   des.innerHTML= "<p>"+ "precio neto es"+firstNumber+"*"+secondNumber+"="+multiplicar(firstNumber,secondNumber)  +"</p>";
   //des.innerHTML = "<p>" + "el descuento neto es: " + firstNumber + "*" +secondNumber + " = " + totalDescuento +  "</p>";
-  des.innerHTML = "<p>El descuento es: "+porcentajeDescuento+"% = "+totalDescuento+"</p>";
+ // des.innerHTML = "<p>El descuento es: "+porcentajeDescuento+"% = "+totalDescuento+"</p>";
+ des.innerHTML="<p>el descuento es de:"+
+ multiplicar(porcentajeDescuento,100)+"% =" + totalDescuento+"</p>";
 });
