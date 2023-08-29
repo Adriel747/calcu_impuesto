@@ -24,6 +24,9 @@ function impuesto(estado)
     case 'AL':
       impuesto=0.04;
       break;
+    case 'NV':
+      impuesto=0.08;
+      break;
   }
   return impuesto;
 }
