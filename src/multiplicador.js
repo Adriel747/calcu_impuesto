@@ -7,11 +7,13 @@ function descuento(des) {
     descuento=0.3
   }
   if (des >= 1000 && des <= 3000)
-  des=0.03;
+  descuento=0.03;
   if(des >= 3000 && des <= 7000)
-  des=0.05;
+  descuento=0.05;
   if(des >7000 && des<=10000)
-  des= 0.07;
+  descuento= 0.07;
+  if(des>=30000)
+  descuento=0.15;
   return descuento;
 }
 function impuesto(estado)
@@ -36,4 +38,11 @@ function impuesto(estado)
   }
   return impuesto;
 }
-export {multiplicar,descuento,impuesto};
+function calcularPrecioTotal(precioNeto, descuento, impuesto) {
+  let tot = impuesto - descuento;
+  tot = tot + precioNeto;
+  return tot;
+}
+
+
+export {multiplicar,descuento,impuesto,calcularPrecioTotal};
