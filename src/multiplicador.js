@@ -21,6 +21,9 @@ function impuesto(estado)
     case 'TX':
       impuesto=0.0625;
       break;
+    case 'AL':
+      impuesto=0.04;
+      break;
   }
   return impuesto;
 }
